@@ -1,0 +1,14 @@
+{
+	"scripts": {
+		"run-backend": "cd ./backend && supervisor app.js",
+		"run-frontend": "cd ./frontend && npm run dev",
+		"dev": "npm-run-all --parallel run-backend run-frontend"
+	},
+	"dependencies": {
+		"concurrently": "^8.2.0",
+		"supervisor": "^0.12.0"
+	},
+	"devDependencies": {
+		"npm-run-all": "^4.1.5"
+	}
+}
